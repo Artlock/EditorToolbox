@@ -1,0 +1,10 @@
+The main assembly has access to all assemblies except editor (Can use custom editor ones but wont build then)
+The editor assembly has access to all assemblies
+
+Custom assemblies do not have access to the main and editor assemblies
+
+A custom main assembly has access to any listed custom assembly (Can use custom editor ones but wont build then)
+A custom editor assembly has access to any listed custom assembly
+
+All assemblies (unless specified otherwise) have access to UnityEngine and UnityEditor
+If the UnityEditor assembly is accessed outside the Editor folder the build will fail
